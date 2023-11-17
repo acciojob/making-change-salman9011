@@ -1,10 +1,11 @@
 const makeChange = (c) => {
   // your name here
 	let units={
-		penny:0.01,
-		Nickle:0.05,
-		Dime:0.10,
-		Quater:0.25
+		q:25,
+	   d:10,
+		n:5,
+		p:1
+		
 		}
 	let output={}
 	for(let i in units){
@@ -12,7 +13,7 @@ const makeChange = (c) => {
 		output[i]=parseInt(num/currentUnits);
 		num=num%currentUnits;
 	}
-	console.log(output);
+	alert(output); 
 	
 };
 
